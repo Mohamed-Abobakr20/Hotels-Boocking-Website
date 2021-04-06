@@ -1,0 +1,573 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #eee;
+}
+
+
+/*Start Nav*/
+
+nav {
+    overflow: hidden;
+    background-color: white;
+}
+
+nav a {
+    float: left;
+    color: black;
+    text-decoration: none;
+    padding: .7rem 1rem;
+    font-size: 1.1rem;
+}
+
+nav a.right {
+    float: right;
+    background-color: #eee;
+}
+
+nav a:first-child {
+    background-color: #f44336;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+nav a:first-child i {
+    padding-right: .7rem;
+}
+
+
+/*End Nav*/
+
+
+/*Start landPage*/
+
+.land {
+    background-image: url('../images/hotel.jpg');
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.land .container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 1rem;
+    width: 47.5%;
+}
+
+.land .container .header {
+    color: white;
+    font-size: 1.6rem;
+    padding: 1rem;
+    background-color: #f44336;
+}
+
+.land .container .header p i {
+    padding-right: .7rem;
+}
+
+.land .container .form {
+    background-color: white;
+    padding: 1rem;
+}
+
+.land .container .form .row {
+    overflow: hidden;
+}
+
+.land .container .form .row:not(:last-child) {
+    margin-bottom: 1.3rem;
+}
+
+.land .container .form .row .part1 {
+    float: left;
+    width: 49%;
+}
+
+.land .container .form .row .part2 {
+    float: right;
+    width: 49%;
+}
+
+.land .container .form .row .part1 input,
+.land .container .form .row .part2 input {
+    display: block;
+    padding: .7rem;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.land .container .form .row .part1 button {
+    background-color: #666;
+    color: white;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+}
+
+.land .container .form .row .part1 button:hover {
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+
+.land .container .form .row .part1 button i {
+    padding-right: .5rem;
+}
+
+
+/*End landPage*/
+
+
+/*Start Rooms*/
+
+.rooms {
+    margin: 2rem 1rem;
+}
+
+.rooms h3 {
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.rooms p {
+    margin: 1.2rem 0;
+}
+
+.rooms .form {
+    display: flex;
+    margin-bottom: 1.2rem;
+}
+
+.rooms .form .part:first-child,
+.rooms .form .part:nth-child(2) {
+    width: 25%;
+}
+
+.rooms .form .part:last-child,
+.rooms .form .part:nth-child(3),
+.rooms .form .part:nth-child(4) {
+    width: 16.3%;
+}
+
+.rooms .form .part input {
+    display: block;
+    width: 100%;
+    padding: .7rem;
+    border: 1px solid #ccc;
+}
+
+.rooms .form .part:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.rooms .form .part:last-child input {
+    background-color: black;
+    color: white;
+}
+
+.rooms .form .part:last-child input:hover {
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+
+.rooms .rooms-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rooms .rooms-info .part {
+    width: 32.4%;
+    background-color: white;
+}
+
+.rooms .rooms-info .part .details {
+    padding: .9rem;
+}
+
+.rooms .rooms-info .part .details .gray {
+    color: gray;
+}
+
+.rooms .rooms-info .part .details button {
+    background-color: black;
+    color: white;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: .7rem;
+    font-size: .9rem;
+}
+
+.rooms .rooms-info .part .details button:hover {
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+
+
+/*End Rooms*/
+
+
+/*Start About*/
+
+.about .container {
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .container .part:first-child {
+    width: 32.4%;
+}
+
+.about .container .part:first-child h3 {
+    font-weight: lighter;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.about .container .part:first-child p:nth-child(2) {
+    margin: 1rem 0;
+    line-height: 1.5;
+}
+
+.about .container .part:last-child {
+    width: 66.2%;
+}
+
+.about .contacts {
+    text-align: center;
+    margin: 2rem 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about .contacts p:nth-child(2) {
+    padding: 0 .5rem;
+}
+
+.about .contacts p i {
+    color: #f44336;
+}
+
+.about .note {
+    border-left: 7px solid #ccc;
+    color: white;
+    padding: 2.3rem 1rem;
+    background-color: #f44336;
+}
+
+.about .note p i {
+    background-color: orangered;
+    padding: .5rem 1rem;
+    margin-right: 1rem;
+}
+
+
+/*End About*/
+
+
+/*Start Hotels*/
+
+.hotels {
+    margin: 2rem 1rem;
+}
+
+.hotels h3 {
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.hotels p {
+    margin: 1.2rem 0;
+}
+
+.hotels .galary {
+    display: flex;
+}
+
+.hotels .galary .part,
+.hotels .galary .part .row {
+    position: relative;
+}
+
+.hotels .galary .part p,
+.hotels .galary .part .row p {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    color: white;
+}
+
+.hotels .galary .part:nth-child(2) {
+    margin: 0 1rem;
+}
+
+.hotels .galary .part .row:first-child {
+    margin-bottom: .8rem;
+}
+
+.hotels .galary .part img {
+    height: 100%;
+}
+
+
+/*End Hotels*/
+
+
+/*Start Offer*/
+
+.offer {
+    background-color: #000;
+    color: white;
+    padding: 2rem 1rem;
+    opacity: .6;
+}
+
+.offer h2 {
+    font-weight: lighter;
+}
+
+.offer p {
+    margin: 1rem 0;
+}
+
+.offer input {
+    display: block;
+    margin-bottom: 1rem;
+    padding: .7rem;
+    width: 100%;
+    border: none;
+}
+
+.offer button {
+    background-color: #f44336;
+    color: white;
+    padding: .7rem 1rem;
+    border: none;
+    outline: none;
+    font-size: .9rem;
+}
+
+.offer:hover {
+    opacity: 1;
+}
+
+.offer button:hover {
+    background-color: #ccc;
+    cursor: pointer;
+    color: black;
+}
+
+
+/*End Offer*/
+
+
+/*Start Contact*/
+
+.contact {
+    padding: 2rem 1rem;
+}
+
+.contact h2 {
+    font-weight: lighter;
+}
+
+.contact p:nth-child(2) {
+    margin: 1rem 0;
+}
+
+.contact p:nth-child(4) {
+    margin: .2rem 0;
+}
+
+.contact p:nth-child(5) {
+    margin-bottom: 1rem;
+}
+
+.contact p i {
+    color: #f44336;
+    padding-right: .7rem;
+}
+
+.contact input {
+    display: block;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact input:nth-child(7) {
+    margin: 1rem 0;
+}
+
+.contact button {
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    padding: .7rem 1rem;
+    font-size: .9rem;
+}
+
+.contact button:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+
+/*End Contact*/
+
+
+/*Start Footer*/
+
+.footer {
+    background-color: #000;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.footer p {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer i {
+    color: white;
+}
+
+.footer i:not(:last-child) {
+    padding-right: .5rem;
+}
+
+.footer i:hover {
+    color: #ccc;
+    cursor: pointer;
+}
+
+
+/*End Footer*/
+
+
+/*Start Mobile Devices*/
+
+@media screen and (max-width: 600px) {
+    nav {
+        text-align: center;
+    }
+    nav a {
+        display: block;
+        float: none;
+    }
+    nav a.right {
+        float: none;
+    }
+    .land {
+        height: 80vh;
+    }
+    .land .container {
+        width: 85%;
+        margin: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .land .container .form {
+        margin: 0 auto;
+    }
+    .land .container .form .row {
+        margin: 0 auto;
+    }
+    .land .container .form .row .part1 {
+        float: none;
+        margin-bottom: 1rem;
+        margin-right: 0;
+        width: 100%;
+    }
+    .land .container .form .row .part2 {
+        float: none;
+        width: 100%;
+    }
+    .land .container .form .row .part1 input,
+    .land .container .form .row .part2 input {
+        width: 100%;
+    }
+    .rooms .form {
+        display: block;
+    }
+    .rooms .form .part {
+        width: 100% !important;
+        margin: 0 0 .3rem 0;
+    }
+    .rooms .rooms-info {
+        display: block;
+    }
+    .rooms .rooms-info .part {
+        width: 100%;
+    }
+    .rooms .rooms-info .part:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+    .about .container {
+        display: block;
+    }
+    .about .container .part {
+        width: 100% !important;
+    }
+    .about .container .part:first-child {
+        margin-bottom: 1rem;
+    }
+    .about .contacts {
+        display: block;
+        margin: 2rem 1rem;
+        text-align: center;
+    }
+    .about .contacts p {
+        padding: .3rem 0;
+    }
+    .hotels .galary {
+        display: block;
+    }
+    .hotels .galary .part:nth-child(2) {
+        margin: 0;
+    }
+    .hotels .galary .part:not(:last-child) {
+        margin-bottom: .8rem;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+    .land {
+        height: 90vh;
+    }
+    .land .container {
+        width: 70%;
+    }
+    .about .container {
+        display: block;
+    }
+    .about .container .part {
+        width: 100% !important;
+    }
+    .about .container .part:first-child {
+        margin-bottom: 1rem;
+    }
+}
+
+
+/*End Mobile Devices*/
